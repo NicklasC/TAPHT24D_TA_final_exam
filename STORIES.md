@@ -20,13 +20,13 @@ Priority: High
 ### User story: Menu navigation
 
     As a user
-    I want to use the navigation menu 
+    I want to click the navigation buttons 
     So that I can move between the different sections of the site
 
 #### Acceptance criteria:
 
     - [A1] Three navigation buttons available: Katalog, Lägg till bok, Mina böcker
     - [A2] Clicking a button leads to correct page
-    - [A3] Active button is visually distinct from inactive buttons
+    - [A3] The current page navigation button should be disabled
     - [A4] Navigation buttons should be visible on all pages
 
