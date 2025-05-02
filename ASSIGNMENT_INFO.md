@@ -3,7 +3,7 @@
 RepoURL
 https://github.com/NicklasC/TAPHT24D_TA_Final
 
-Site that will be tested
+Site that is tested
 https://tap-ht24-testverktyg.github.io/exam-template/
 
 Assignment description
