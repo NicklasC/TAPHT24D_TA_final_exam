@@ -12,6 +12,7 @@ def before_all(context):
 def before_scenario(context, scenario):
     # Create a new page for each scenario
     context.page = context.browser.new_page()
+    context.page.goto(f'https://tap-ht24-testverktyg.github.io/exam-template/')
 
 
 def after_scenario(context, scenario):
