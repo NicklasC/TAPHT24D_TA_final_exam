@@ -11,6 +11,21 @@ Priority: Medium
 ## Feature: Add book
 Priority: High
 
+### User story: Add a book
+    As a user
+    I want to add a book
+    To add to the collection for me and other users
+
+#### Acceptance criteria:
+    - [A1] A book needs to have both title and author
+    - [A2] "Lägg till ny bok" button should be disabled when page is loaded
+    - [A3] "Lägg till ny bok" button should be disabled when only Titel is filled in.
+    - [A4] "Lägg till ny bok" button should be disabled when only Author is filled in.
+    - [A5] "Lägg till ny bok" button should be enabled when both Titel and Author is filled in.
+    - [A6] It should be possible to create a book with åäö characters in title and Author field.
+    - [A7] The book should be visible on the show my favorites page
+    - [A8] The book should be visible on the show all books page
+
 ## Feature: Show my favorites
 Priority: Low
 
