@@ -22,16 +22,34 @@ Feature: Add book
     And I type Jan Banan in the book författare field
     Then the lagg till ny bok button is enabled
 
+  Scenario: Lagg till ny bok button should be enabled when both Titel and Author with åäö is filled in
+    Given I navigate to the lägg till bok page
+    When I type Min bokåä in the book titel field
+    And I type Jan Bananö in the book författare field
+    Then the lagg till ny bok button is enabled
+
   Scenario: Create book should clear form
     Given I navigate to the lägg till bok page
-    When I create a book with titel blah made by author blooh
+    When I create a book with titel testtitel made by author testauthor
     Then titel field should be empty
     And författare field should be empty
     And the lagg till ny bok button is disabled
 
-    Scenario: Created book should show in Katalog page
-      Given I navigate to the lägg till bok page
-      When I create a book with titel blah made by author blooh
-      And I navigate to the katalog page
-      Then the book blah should show on Katalog page
+  Scenario: Create book with åäö should clear form
+    Given I navigate to the lägg till bok page
+    When I create a book with titel testö made by author teståä
+    Then titel field should be empty
+    And författare field should be empty
+    And the lagg till ny bok button is disabled
 
+  Scenario: Created book should show in Katalog page
+    Given I navigate to the lägg till bok page
+    When I create a book with titel blah made by author blooh
+    And I navigate to the katalog page
+    Then the book blah should show on Katalog page
+
+  Scenario: Created book with åäö should show in Katalog page
+    Given I navigate to the lägg till bok page
+    When I create a book with titel titelåä made by author authorö
+    And I navigate to the katalog page
+    Then the book titelåä should show on Katalog page
