@@ -10,13 +10,14 @@ from tests.pages.lagg_till_bok_page import LaggTillBokPage
 def step_impl(context):
     context.page.goto(f'https://tap-ht24-testverktyg.github.io/exam-template/')
 
-
-@then('I navigate to the "{page_name}" page')
-@given('I navigate to the "{page_name}" page')
+@when('I navigate to the {page_name} page')
+@then('I navigate to the {page_name} page')
+@given('I navigate to the {page_name} page')
 def step_impl(context, page_name):
     time.sleep(1)
     page_name = page_name.lower()
     page = NavigationPage(context.page)
+
     if page_name == "katalog":
         page.katalog_button.click()
     elif page_name == "lägg till bok":
@@ -27,7 +28,7 @@ def step_impl(context, page_name):
         raise AssertionError(f"Page name must be defined, but it was not. I got '{page_name}' as value.")
 
 
-@then('I should be on the "{expected_page}" page')
+@then('I should be on the {expected_page} page')
 def step_impl(context, expected_page):
     expected_page = expected_page.lower()
     if expected_page == "katalog":
@@ -49,7 +50,7 @@ def step_impl(context, expected_page):
     else:
         raise AssertionError(f"Page name must be defined, but it was not. I got '{expected_page}' as value.")
 
-@then('the "{navigation_button_name}" navigation button should be {expected_status}')
+@then('the {navigation_button_name} navigation button should be {expected_status}')
 def step_impl(context, navigation_button_name, expected_status):
     navigation_button_name = navigation_button_name.lower()
     page = NavigationPage(context.page)
