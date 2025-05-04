@@ -5,11 +5,36 @@ Description: A web application for managing book collections and favorites
 ## Feature: Show all books (Katalog)
 Priority: High
 
-## Feature: Add favorites
+### User story: Show all books on Katalog page
+    As a user
+    I want to see all previously added books
+    So I can get ideas of what book to read
+
+#### Acceptance criteria: 
+    [A1] All books should be listed with title and author.
+
+### User story: Show added book on Katalog page
+    As a user
+    I want to see my newly added book to the book list
+    So I know friends can get it as a recommendation
+
+    [A2] Newly added book should be visible on the Katalog page
+    [A3] All previously added book should still be visible
+
+
+## Feature: Add favorite flag on book
 Priority: Medium
+
+## Feature: Remove favorite flag on book
+Priority: Medium
+
+## Feature: Show favorite books
+Priority: Medium
+
 
 ## Feature: Add book
 Priority: High
+Status: Done
 
 ### User story: Add a book
     As a user
@@ -37,11 +62,9 @@ Priority: High
     - [A7] It should be possible to create a book with åäö characters in title and Author field.
     - [A8] A created book should be visible on the Katalog page
 
-## Feature: Show my favorites
-Priority: Low
-
 ## Feature: Navigate site
 Priority: High
+Status: Done
 
 ### User story: Menu navigation
     As a user

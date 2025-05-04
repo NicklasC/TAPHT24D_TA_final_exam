@@ -46,10 +46,10 @@ Feature: Add book
     Given I navigate to the lägg till bok page
     When I create a book with titel blah made by author blooh
     And I navigate to the katalog page
-    Then the book blah should show on Katalog page
+    Then the book blah with forfattare blooh should show on Katalog page
 
   Scenario: Created book with åäö should show on Katalog page
     Given I navigate to the lägg till bok page
     When I create a book with titel titelåä made by author authorö
     And I navigate to the katalog page
-    Then the book titelåä should show on Katalog page
+    Then the book titelåä with forfattare authorö should show on Katalog page

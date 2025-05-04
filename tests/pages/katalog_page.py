@@ -15,7 +15,7 @@ class KatalogPage:
             book_text = book.inner_text()
             book_text = book_text.replace('❤️','').strip()#Remove heart
 
-            titel =book_text[0:book_text.rfind('"')+1]
+            titel = book_text[1:book_text.rfind('"')]
             author = book_text[book_text.rfind('"') + 1:].strip(", ")
 
             #Find out if the book is favorite and also test id
