@@ -43,13 +43,17 @@ Feature: Add book
     And the lagg till ny bok button is disabled
 
   Scenario: Created book should show on Katalog page
-    Given I navigate to the lägg till bok page
+    Given Number of displayed books is 7
+    And I navigate to the lägg till bok page
     When I create a book with titel blah made by author blooh
     And I navigate to the katalog page
-    Then the book blah with forfattare blooh should show on Katalog page
+    Then Number of displayed books is 8
+    And the book blah with forfattare blooh should show on Katalog page
 
   Scenario: Created book with åäö should show on Katalog page
+    Given Number of displayed books is 7
     Given I navigate to the lägg till bok page
     When I create a book with titel titelåä made by author authorö
     And I navigate to the katalog page
-    Then the book titelåä with forfattare authorö should show on Katalog page
+    Then Number of displayed books is 8
+    And the book titelåä with forfattare authorö should show on Katalog page

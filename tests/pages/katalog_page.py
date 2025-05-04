@@ -37,7 +37,7 @@ class KatalogPage:
 
     def count_books(self):
         books=self.get_all_books_list()
-        return books.count()
+        return len(books)
 
     def book_displays(self, titel):
         book = self.page.get_by_test_id(f"star-{titel}")
