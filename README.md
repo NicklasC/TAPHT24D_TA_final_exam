@@ -6,6 +6,8 @@ The assignment is to test the site located at https://tap-ht24-testverktyg.githu
 
 For more detailed information regarding the assignment, see links and information in the ASSIGNMENT_INFO.md file.
 
+## To run the tests, see instruction in the "Auto installation" chapter below
+
 ## Technology used
 
 * Python
@@ -32,6 +34,18 @@ environment.py and .gitignore (as per this project)
 
 ### Setup and install dependencies
 
+#### Auto installation
+
+Checkout the repo and install dependencies according to dependencies.txt
+If you do not, you can do the dependency installation manually as below:
+
+Note that You MIGHT need to do the `playwright install` command after installing using dependencies.txt
+
+Then to run the tests use `behave .\tests\features\`, or in PyCharm right-click tests/features folder and select run
+features
+
+#### Manual installation
+
 (setup .venv)
 
 in terminal:
@@ -44,7 +58,7 @@ in terminal:
 
 `pip install pytest-playwright` (This also installs pytest, which is a dependency to pytest-playwright)
 
-## Good to have commands
+## Good to have command
 
 Command below gives a nice gui to get ideas of identifiers
 
