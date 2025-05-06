@@ -1,7 +1,4 @@
-from asyncio import wait_for
-
 from behave import given, when, then
-from playwright.sync_api import expect
 
 from tests.pages.katalog_page import KatalogPage
 

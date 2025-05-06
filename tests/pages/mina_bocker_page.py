@@ -1,6 +1,3 @@
-from encodings.punycode import selective_find
-
-
 class MinaBockerPage:
     def __init__(self, page):
         self.page = page

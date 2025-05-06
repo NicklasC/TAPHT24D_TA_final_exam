@@ -1,4 +1,4 @@
-from behave import given, when, then
+from behave import then
 from playwright.sync_api import expect
 
 from tests.pages.mina_bocker_page import MinaBockerPage
