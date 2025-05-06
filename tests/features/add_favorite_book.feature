@@ -1,4 +1,4 @@
-# Created by ncasv at 2025-05-05
+# Created by Nicklas Carlsson at 2025-05-05
 Feature: add favorite book
   The user should be able to mark a book as a favorite.
 

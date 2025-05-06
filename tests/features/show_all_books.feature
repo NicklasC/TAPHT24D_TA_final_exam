@@ -1,4 +1,4 @@
-# Created by ncasv at 2025-05-04
+# Created by Nicklas Carlsson at 2025-05-04
 Feature: Show all books
   On the Katalog page, all books should display
 

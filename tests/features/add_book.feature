@@ -1,4 +1,4 @@
-# Created by ncasv at 2025-05-03
+# Created by Nicklas Carlsson at 2025-05-03
 Feature: Add book
   Implements scenario and requirements for the feature Add book
 

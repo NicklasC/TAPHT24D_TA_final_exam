@@ -1,4 +1,4 @@
-# Created by ncasv at 2025-05-02
+# Created by Nicklas Carlsson at 2025-05-02
 Feature: Navigation between pages
   User story: Menu navigation
   It should be possible to navigate to each page from any other page

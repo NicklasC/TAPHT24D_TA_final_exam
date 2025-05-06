@@ -1,4 +1,4 @@
-# Created by ncasv at 2025-05-06
+# Created by Nicklas Carlsson at 2025-05-06
 Feature: Show favorite books page
   # Enter feature description here
 
