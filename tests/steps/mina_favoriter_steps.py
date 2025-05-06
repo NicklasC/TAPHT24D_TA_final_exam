@@ -29,3 +29,9 @@ def step_impl(context, expected_book):
     page = MinaBockerPage(context.page)
     book_that_should_be_listed = page.get_book_description(expected_book)
     expect(book_that_should_be_listed).to_be_visible()
+
+@then('the book {expected_book} should not be listed')
+def step_impl(context, expected_book):
+    page = MinaBockerPage(context.page)
+    book_that_should_be_listed = page.get_book_description(expected_book)
+    expect(book_that_should_be_listed).to_be_hidden()

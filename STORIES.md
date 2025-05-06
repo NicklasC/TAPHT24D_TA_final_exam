@@ -43,6 +43,7 @@ Priority: Medium
     [A5] A book without favorite marking should show without any heart icon to the left of it
     [A6] A book that is not marked as favorite should not be visible on the mina favoriter page
 
+
 ## Feature: Show favorite books
 
 ### User story
@@ -52,8 +53,6 @@ Priority: Medium
 
     [A1] If no books are marked as favorite, the user be informed that they will be listed
     [A2] if one or many books are marked as favorite, they will be listed on the favorite page.
-
-
 
 
 ## Feature: Add book
