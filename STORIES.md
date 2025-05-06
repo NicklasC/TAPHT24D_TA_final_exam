@@ -4,7 +4,7 @@ Description: A web application for managing book collections and favorites
 
 ## Feature: Show all books (Katalog)
 Priority: High
-
+Status: Done
 ### User story: Show all books on Katalog page
     As a user
     I want to see all previously added books
@@ -22,14 +22,38 @@ Priority: High
     [A3] All previously added book should still be visible
 
 
-## Feature: Add favorite flag on book
+## Feature: Add and remove favorite flag on a book
 Priority: Medium
 
-## Feature: Remove favorite flag on book
-Priority: Medium
+### User story: add favorite flag on book
+    As a user
+    I want to add a favorite flag on a book
+    So I can mark it as a favorite book
+
+    [A1] A click on a book with no favorite marking should mark the book as favorite
+    [A2] A book with favorite marking should show with a heart icon to the left of it
+    [A3] A book with favorite marking should be listed on the mina favoriter page
+
+### User story: remove favorite flag on book
+    As a user
+    I want to remove a favorite flag on a book
+    So I can remove the favorite flag on a book
+
+    [A4] A click on a book with favorite marking should be unflagged as favorite
+    [A5] A book without favorite marking should show without any heart icon to the left of it
+    [A6] A book that is not marked as favorite should not be visible on the mina favoriter page
 
 ## Feature: Show favorite books
-Priority: Medium
+
+### User story
+    As a user
+    I want to be able to see a list of all my favorites
+    So I can be reminded of what books to recommend to my friends
+
+    [A1] If no books are marked as favorite, the user be informed that they will be listed
+    [A2] if one or many books are marked as favorite, they will be listed on the favorite page.
+
+
 
 
 ## Feature: Add book

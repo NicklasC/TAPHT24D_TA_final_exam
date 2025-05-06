@@ -25,6 +25,7 @@ def step_impl(context,text):
     page = LaggTillBokPage(context.page)
     page.författare.fill(text)
 
+@given('I create a book with titel {title} made by author {author_name}')
 @when('I create a book with titel {title} made by author {author_name}')
 def step_impl(context,title, author_name):
     page = LaggTillBokPage(context.page)

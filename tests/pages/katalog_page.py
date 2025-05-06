@@ -43,3 +43,8 @@ class KatalogPage:
         book = self.page.get_by_test_id(f"star-{titel}")
         expect(book).to_be_visible()
 
+    def click_book(self, click_book_name):
+        book = self.page.get_by_test_id(f"star-{click_book_name}")
+        expect(book).to_be_visible()
+        book.click()
+
