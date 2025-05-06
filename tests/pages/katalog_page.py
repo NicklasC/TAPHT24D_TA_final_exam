@@ -9,16 +9,15 @@ class KatalogPage:
 
     def get_all_books_list(self):
         books = self.page.locator('.book').all()
-        all_books_data=[]
+        all_books_data = []
         for book in books:
-
             book_text = book.inner_text()
-            book_text = book_text.replace('❤️','').strip()#Remove heart
+            book_text = book_text.replace('❤️', '').strip()  # Remove heart
 
             titel = book_text[1:book_text.rfind('"')]
             author = book_text[book_text.rfind('"') + 1:].strip(", ")
 
-            #Find out if the book is favorite and also test id
+            # Find out if the book is favorite and also test id
             star_element = book.locator('.star')
             book_test_id = star_element.get_attribute('data-testid')
             star_classes = star_element.get_attribute('class')
@@ -36,7 +35,7 @@ class KatalogPage:
         return self.a_book.is_visible()
 
     def count_books(self):
-        books=self.get_all_books_list()
+        books = self.get_all_books_list()
         return len(books)
 
     def book_displays(self, titel):
@@ -47,4 +46,3 @@ class KatalogPage:
         book = self.page.get_by_test_id(f"star-{click_book_name}")
         expect(book).to_be_visible()
         book.click()
-

@@ -10,6 +10,7 @@ from tests.pages.lagg_till_bok_page import LaggTillBokPage
 def step_impl(context):
     context.page.goto(f'https://tap-ht24-testverktyg.github.io/exam-template/')
 
+
 @when('I navigate to the {page_name} page')
 @then('I navigate to the {page_name} page')
 @given('I navigate to the {page_name} page')
@@ -50,27 +51,31 @@ def step_impl(context, expected_page):
     else:
         raise AssertionError(f"Page name must be defined, but it was not. I got '{expected_page}' as value.")
 
+
 @then('the {navigation_button_name} navigation button should be {expected_status}')
 def step_impl(context, navigation_button_name, expected_status):
     navigation_button_name = navigation_button_name.lower()
     page = NavigationPage(context.page)
     if navigation_button_name == "katalog":
         button = page.katalog_button
-    elif navigation_button_name =="lägg till bok":
+    elif navigation_button_name == "lägg till bok":
         button = page.lagg_till_bok_button
     elif navigation_button_name == "mina böcker":
         button = page.mina_bocker_button
     else:
-        raise AssertionError(f"Navigation button name must be defined, but it was not. I got '{navigation_button_name}' as value.")
+        raise AssertionError(
+            f"Navigation button name must be defined, but it was not. I got '{navigation_button_name}' as value.")
 
     if expected_status == "enabled":
         if button.is_enabled():
             pass
         else:
-            raise AssertionError(f"The navigation button '{navigation_button_name}'  does not have status '{expected_status}'.")
+            raise AssertionError(
+                f"The navigation button '{navigation_button_name}'  does not have status '{expected_status}'.")
 
     if expected_status == "disabled":
         if button.is_disabled():
             pass
         else:
-            raise AssertionError(f"The navigation button '{navigation_button_name}'  does not have status '{expected_status}'.")
+            raise AssertionError(
+                f"The navigation button '{navigation_button_name}'  does not have status '{expected_status}'.")

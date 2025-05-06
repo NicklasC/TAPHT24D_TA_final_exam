@@ -7,6 +7,7 @@ The assignment is to test the site located at https://tap-ht24-testverktyg.githu
 For more detailed information regarding the assignment, see links and information in the ASSIGNMENT_INFO.md file.
 
 ## Technology used
+
 * Python
 * Playwright
 * Pytest
@@ -16,6 +17,7 @@ For more detailed information regarding the assignment, see links and informatio
 ## Steps to setup project from scratch (For my own personal use)
 
 ### Setup folder structure
+
 Create folder structure:
 
 - tests/features
@@ -25,14 +27,16 @@ Create folder structure:
 - tests/steps
 
 ### Setup environment and .gitignore
+
 environment.py and .gitignore (as per this project)
 
 ### Setup and install dependencies
+
 (setup .venv)
 
 in terminal:
 
-`pip install playwright` 
+`pip install playwright`
 
 `playwright install` (installs browser binaries)
 
