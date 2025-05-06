@@ -43,3 +43,12 @@ in terminal:
 `pip install behave`
 
 `pip install pytest-playwright` (This also installs pytest, which is a dependency to pytest-playwright)
+
+## Good to have commands
+
+Command below gives a nice gui to get ideas of identifiers
+
+playwright codegen https://lejonmanen.github.io/agile-helper/
+
+
+

@@ -8,6 +8,9 @@ def before_all(context):
     context.browser = context.playwright.chromium.launch(
         headless=False)  # Use `headless=True` if you want to run silently
 
+    # Example for development
+    # context.browser = context.browsertype.launch(headless=False, slow_mo=500)
+
 
 def before_scenario(context, scenario):
     # Create a new page for each scenario
